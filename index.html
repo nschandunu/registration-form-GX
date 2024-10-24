@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Patient Information</h2>
+    <form id="patientForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+
+        <label for="birthDate">Birth Date:</label>
+        <input type="date" id="birthDate" name="birthDate" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <div class="radio-group">
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label>
+        </div>
+
+        <label for="disease">Disease:</label>
+        <select id="disease" name="disease" required>
+            <option value="" disabled selected>Select</option>
+            <option value="Disease1">Dengue</option>
+            <option value="Disease2">Covid</option>
+            <option value="Disease3">CKD</option>
+        </select>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="pin">PIN:</label>
+        <input type="password" id="pin" name="pin" required>
+
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+    <!-- This is where the entered details will be shown -->
+    <div id="output"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
