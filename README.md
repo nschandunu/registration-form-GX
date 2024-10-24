@@ -33,4 +33,4 @@ Technologies Used:
 	•	CSS3 for styling
 	•	JavaScript for form validation and displaying submitted data
 
-Feel free to clone or download this project and use it for your own purposes or to enhance your web development skills.
+
